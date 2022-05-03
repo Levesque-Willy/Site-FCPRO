@@ -1,0 +1,41 @@
+#-------------------------------------------------------------------------------
+#  Effacer la BD (si elle existait déja)
+#
+DROP DATABASE IF EXISTS BDNotes ;
+
+#-------------------------------------------------------------------------------
+#  Créer la BD
+#
+
+CREATE DATABASE BDNotes ;
+
+#-------------------------------------------------------------------------------
+#  Utiliser la BD
+#
+
+USE BDNotes ;
+
+
+#-------------------------------------------------------------------------------
+#  Créer la Table Notes
+#
+
+CREATE TABLE Notes 
+(	IdNotes	INT		NOT NULL 	PRIMARY KEY	AUTO_INCREMENT,
+	Nom		CHAR( 30 )	NOT NULL ,
+	Notes		INT 	NOT NULL ,
+	Avis	CHAR( 20 )	NOT NULL
+
+) ENGINE = InnoDB CHARACTER SET latin1 COLLATE latin1_bin;
+
+#-------------------------------------------------------------------------------
+#  Créer des Notes ...
+#
+
+INSERT INTO Notes
+(	Nom,
+	Notes,
+	Avis
+)
+VALUES
+	( 'Charpentier',	5,	"cc"	);
