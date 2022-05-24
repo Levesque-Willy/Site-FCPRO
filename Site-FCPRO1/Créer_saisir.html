@@ -1,0 +1,26 @@
+<html>
+<head> <title>	Saisir une formation	</title> 
+<meta charset="utf-8">
+<head>
+
+<body>
+<h1 align=center >	Ajouter une formation dans la base de donnée</h1>
+<hr>
+	<form action="Creer-enregistrer.php" method="post">  		
+		DateDebut : <input name=date type=text value="">	<br>
+		Duree : <input name=duree type=text value="">	<br>
+		NbPlace : <input name=place type=text value="">	<br>
+		HeureDebut : <input name=heure type=text value="">	<br>
+		NomFormation : <input name=formation type=text value="">	<br>
+		Lien : <input name=lien type=file> <br>
+		Presentation : <input name=desc type=text value="">	<br>
+		<br>
+		<label>Quel est le nom du formateur ?</label><br>
+		Formateur : <select name=formateur value=""> 
+		</select> <br>	
+		<input type=submit value="Ajouter" >
+	</form>
+<hr>
+<li><a href="Afficher.php">Base de données</a></li>
+</body>
+</html> 
